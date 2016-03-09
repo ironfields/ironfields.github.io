@@ -160,3 +160,14 @@ body {
     width: 700px;
   }
 }
+
+.nav .open > a, .nav .open > a:focus, .nav .open > a:hover{
+    background-color: transparent;
+    border-color: inherit; 
+}
+.open > .dropdown-menu{
+    background-color: inherit;
+}
+.dropdown-menu>li>a{
+    color:inherit;
+}
