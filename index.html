@@ -1,45 +1,75 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
 
 <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
     <title>Iron Fields</title>
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css" integrity="sha384-1q8mTJOASx8j1Au+a5WDVnPi2lkFfwwEAa8hDDdjZlpLegxhjVME1fgjWPGmkzs7"
     crossorigin="anonymous">
-    <link rel="stylesheet" type="text/css" href="styles/cover.css">
-    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.0/jquery.min.js"></script>
-    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/js/bootstrap.min.js" integrity="sha384-0mSbJDEHialfmuBBQP6A4Qrprq5OVfW37PRR3j5ELqxss1yVqOtnepnHVP9aJ7xS"
-    crossorigin="anonymous"></script>
-
+    <link href="styles/starter-template.css" rel="stylesheet">
 </head>
 
 <body>
-    <div class="site-wrapper">
-        <div class="site-wrapper-inner">
-            <div class="cover-container">
-                <div class="masthead clearfix">
-                    <div class="inner">
-                        <h3 class="masthead-brand">Iron Fields</h3>
-                        <nav>
-                            <ul class="nav masthead-nav">
-                                <li class="active"><a href="#">Home</a></li>
-                                <li><a href="#">News</a></li>
-                                <li><a href="#">Features</a></li>
-                                <li><a href="#">Contact</a></li>
-                                <li class="dropdown">
-                                    <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">Media<span class="caret"></span></a>
-                                    <ul class="dropdown-menu">
-                                        <li><a href="#">Videos</a></li>
-                                        <li><a href="#">Pictures</a></li>
-                                    </ul>
-                                </li>
-                                <li><a href="#">Steam</a></li>
-                            </ul>
-                        </nav>
-                    </div>
-                </div>
+    <nav class="navbar navbar-inverse navbar-fixed-top">
+        <div class="container">
+            <div class="navbar-header">
+                <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navbar" aria-expanded="false"
+                aria-controls="navbar">
+                    <span class="sr-only">Toggle navigation</span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                </button>
+                <a class="navbar-brand" href="#">Iron Fields</a>
+            </div>
+            <div id="navbar" class="collapse navbar-collapse">
+                <ul class="nav navbar-nav">
+                    <li class="active"><a data-toggle="pill" href="#home">Home</a></li>
+                    <li><a data-toggle="pill" href="#news">News</a></li>
+                    <li><a data-toggle="pill" href="#features">Features</a></li>
+                    <li class="dropdown">
+                        <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button">Media<span class="caret"></span></a>
+                        <ul class="dropdown-menu">
+                            <li><a data-toggle="pill" href="#videos">Videos</a></li>
+                            <li><a data-toggle="pill" href="#pictures">Pictures</a></li>
+                        </ul>
+                    </li>
+                    <li><a href="#">Steam</a></li>
+                </ul>
             </div>
         </div>
+    </nav>
+    <div class="container starter-template tab-content">
+
+        <div id="home" class="tab-pane fade in active">
+            <p>home</p>
+        </div>
+        <!--NEWS-->
+        <div id="news" class="tab-pane fade">
+            <p>news</p>
+        </div>
+        <!--NEWS-->
+        <div id="features" class="tab-pane fade">
+            <p>features</p>
+        </div>
+        <div id="contact" class="tab-pane fade">
+            <p>contact</p>
+        </div>
+        <div id="videos" class="tab-pane fade">
+            <p>videos</p>
+        </div>
+        <div id="pictures" class="tab-pane fade">
+            <p>pictures</p>
+        </div>
     </div>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.0/jquery.min.js"></script>
+    <script>
+        window.jQuery || document.write('<script src="../../assets/js/vendor/jquery.min.js"><\/script>')
+    </script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/js/bootstrap.min.js" integrity="sha384-0mSbJDEHialfmuBBQP6A4Qrprq5OVfW37PRR3j5ELqxss1yVqOtnepnHVP9aJ7xS"
+    crossorigin="anonymous"></script>
 </body>
 
 </html>

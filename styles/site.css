@@ -1,8 +1,0 @@
-.navbar-nav ul li a {
-    background-color: #333;
-    color: #777;
-}
-.navbar-nav ul>li>a:hover{
-    background-color:lightgray;
-    color: white;
-}
